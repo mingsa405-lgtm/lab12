@@ -1,6 +1,8 @@
 #include<iostream>
 
 using namespace std;
+template<typename sas>
+void mySwap(sas&,sas&); 
 
 int main(){
 	int x, y;
@@ -29,4 +31,11 @@ int main(){
 
 	return 0;
 }
-
+template<typename T>
+void mySwap(T &x,T &y){
+    T a=x;
+    T b=y;
+    y=a;
+    x=b;
+    
+}
