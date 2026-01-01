@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 #include<ctime>
-int fibonacci(int a);
+long long int fibonacci(int a);
 
 int main(){
     clock_t start = clock();
@@ -11,7 +11,7 @@ int main(){
     cout << "Elapsed Time: " << elapsed << " seconds.";
     return 0;
 }
-int fibonacci(int a){
+long long int fibonacci(int a){         
     if(a==0){
         return 0;
         
